@@ -1,16 +1,13 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'maven3.8.4'
-        jdk 'jdk21'
-    }
+   
 
     stages {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yourname/java-maven-demo.git'
+                git 'https://github.com/vipin-ethnas/java-maven-demo.git'
             }
         }
 
